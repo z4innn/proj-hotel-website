@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - EM Shores Hotel</title>
+</head>
+<body style="margin: 0; font-family: 'Lucida Bright', sans-serif; background-color: #f2f2f2; color: #333;">
+
+    <header style="background-color: #008080; color: #fff; padding: 20px; display: flex; align-items: center;">
+        <img src="beach.jpg" alt="Em Shores Hotel Logo" style="max-width: 100px; height: auto; margin-right: 20px; border-radius: 50%;">
+        <h1 style="margin: 0; font-size: 2em;">EM Shores Hotel</h1>
+    </header>
+
+    <nav style="background-color: #5F9EA0; overflow: hidden; text-align: center;">
+       
+        <a href="map-location.html" style="display: inline-block; color: white; padding: 14px 16px; text-decoration: none; transition: background-color 0.3s;">Map Location</a>
+		
+		<a href="reservation.html" style="display: inline-block; color: white; padding: 14px 16px; text-decoration: none; transition: background-color 0.3s;">Reservation</a>
+        <b><a href="registration.html" style="display: inline-block; color: white; padding: 14px 16px; text-decoration: none; transition: background-color 0.3s;">Registration</a></b>
+        <a href="announcement.html" style="display: inline-block; color: white; padding: 14px 16px; text-decoration: none; transition: background-color 0.3s;">Announcement</a>
+    </nav>
+
+    <section style="padding: 20px;">
+        <form style="background-color: #D2B48C; padding: 20px; width: 70%; margin: 20px auto; border-radius: 10px;">
+            <h2>Registration Form</h2>
+            <label for="username" style="display: block; margin-bottom: 10px;">Username:</label>
+            <input type="text" id="username" name="username" style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+            <label for="email" style="display: block; margin-bottom: 10px;">Email:</label>
+            <input type="email" id="email" name="email" style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+            <label for="password" style="display: block; margin-bottom: 10px;">Password:</label>
+            <input type="password" id="password" name="password" style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+            <label for="confirm-password" style="display: block; margin-bottom: 10px;">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+            <button type="submit" style="background-color: #008080; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Submit Register</button>
+			
+<script> document.querySelector("form").addEventListener("submit", function (event) { event.preventDefault(); 
+alert("Registration submitted successfully!"); 
+document.querySelector("form").reset(); }); </script>
+        </form>
+    </section>
+   
+
+
+    <footer style="background-color: #5F9EA0; color: #fff; padding: 10px; text-align: center;">
+        &copy; 2024 EM Shores Hotel. All rights reserved.
+    </footer>
+
+</body>
+</html>

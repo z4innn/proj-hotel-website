@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - EM Shores Hotel</title>
+</head>
+<body style="margin: 0; font-family: 'Lucida Bright', sans-serif; background-color: #f2f2f2; color: #333;">
+
+    <header style="background-color: #008080; color: #fff; padding: 20px; display: flex; align-items: center;">
+        <img src="beach.jpg" alt="Em Shores Hotel Logo" style="max-width: 100px; height: auto; margin-right: 20px; border-radius: 50%;">
+        <h1 style="margin: 0; font-size: 2em;">EM Shores Hotel</h1>
+    </header>
+
+    <nav style="background-color: #5F9EA0; overflow: hidden; text-align: center;">
+       
+        <a href="map-location.html" style="display: inline-block; color: white; padding: 14px 16px; text-decoration: none; transition: background-color 0.3s;">Map Location</a>
+		
+		<b><a href="reservation.html" style="display: inline-block; color: white; padding: 14px 16px; text-decoration: none; transition: background-color 0.3s;">Reservation</a></b>
+        <a href="registration.html" style="display: inline-block; color: white; padding: 14px 16px; text-decoration: none; transition: background-color 0.3s;">Registration</a>
+        <a href="announcement.html" style="display: inline-block; color: white; padding: 14px 16px; text-decoration: none; transition: background-color 0.3s;">Announcement</a>
+    </nav>
+    <section style="padding: 20px;">
+        <form style="background-color: #D2B48C; padding: 20px; width: 70%; margin: 20px auto; border-radius: 15px;">
+            <h2>Reservation Form</h2>
+            <label for="name" style="display: block; margin-bottom: 10px;">Full Name:</label>
+            <input type="text" id="name" name="name" style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+            <label for="email" style="display: block; margin-bottom: 10px;">Email:</label>
+            <input type="email" id="email" name="email" style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+            <label for="number of guest" style="display: block; margin-bottom: 10px;">Number of Guest:</label>
+            <input type="number" id="number_of_guest" name="number_of_guest" style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+<label for="roomtype" style="display: block; margin-bottom: 10px;">Room Type:</label>
+            <select id="roomtype" name="roomtype" style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"required>
+                <option value="single" style="font-family: 'Lucida Bright';">Single</option>
+                <option value="double" style="font-family: 'Lucida Bright';">Double</option>
+                <option value="suite" style="font-family: 'Lucida Bright';">Suite </option>
+            </select>
+
+            <label for="check-in" style="display: block; margin-bottom: 10px;">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+            <label for="check-out" style="display: block; margin-bottom: 10px;">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+            <label for="comments" style="display: block; margin-bottom: 10px;">Additional Comments:</label>
+            <textarea id="comments" name="comments" style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" rows="4"></textarea>
+
+            <button type="submit" style="background-color: #008080; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Submit Reservation</button>
+        </form>
+    </section>
+
+    <footer style="background-color: #5F9EA0; color: #fff; padding: 10px; text-align: center;">
+        &copy; 2024 EM Shores Hotel. All rights reserved.
+    </footer>
+    <script>
+        document.querySelector("form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Reservation submitted successfully!");
+            document.querySelector("form").reset();
+        });
+    </script>
+</body>
+</html>
